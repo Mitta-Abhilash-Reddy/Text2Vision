@@ -1,194 +1,135 @@
 <div align="center">
 
-<img src="client/public/favicon.svg" alt="Imagify Logo" width="180"/>
+<h1>✨ Text2Vision — Convert Your Imagination Into Images</h1>
 
-# ✨ Imagify - AI Transforming Your Images Magically ✨
+<p>
+Text2Vision is an AI-powered application that transforms <b>text descriptions into high-quality images</b>.  
+Built using a modern full-stack setup with <b>React, Vite, Node.js, Express, and MongoDB</b>, it provides a smooth and fast user experience.
+</p>
 
-> 🎨 Where Creativity Meet Technology
+<hr>
 
-[![React](https://img.shields.io/badge/React-19.0.0-61DAFB?style=for-the-badge&logo=react&logoColor=white&labelColor=20232A)](https://reactjs.org/)
-[![Vite](https://img.shields.io/badge/Vite-6.2.0-646CFF?style=for-the-badge&logo=vite&logoColor=white&labelColor=20232A)](https://vitejs.dev/)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.0.15-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white&labelColor=20232A)](https://tailwindcss.com/)
-[![Express.js](https://img.shields.io/badge/Express-4.18.0-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
+<h2>🚀 Features</h2>
 
+<ul align="left">
+  <li>🧠 <b>AI Text-to-Image Generation</b></li>
+  <li>⚡ <b>Fast Backend Processing</b></li>
+  <li>🎨 <b>Clean & Responsive UI</b></li>
+  <li>🔐 <b>Secure API Integration</b></li>
+  <li>📸 <b>Image Enhancement Tools</b></li>
+</ul>
 
+<hr>
 
-[![GitHub stars](https://img.shields.io/github/stars/singh04ayush/imagify?style=social)](https://github.com/singh04ayush/imagify/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/singh04ayush/imagify?style=social)](https://github.com/singh04ayush/imagify/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/singh04ayush/imagify?style=social)](https://github.com/singh04ayush/imagify/issues)
+<h2>🛠️ Tech Stack</h2>
 
----
+<h3>Frontend</h3>
+<ul align="left">
+  <li>React</li>
+  <li>Vite</li>
+  <li>Tailwind CSS</li>
+</ul>
 
-</div>
+<h3>Backend</h3>
+<ul align="left">
+  <li>Node.js</li>
+  <li>Express</li>
+  <li>MongoDB</li>
+</ul>
 
-## ✨ Features
+<hr>
 
-- 🚀 **Fast Processing**: Optimized for performance
-- 📱 **Responsive Design**: Works on all devices
-- 🔒 **Secure Processing**: Your images stay private
-- 💡 **AI**: AI-powered Images
+<h2>📦 Project Structure</h2>
 
+<pre>
+Text2Vision/
+ ├── client/       # React frontend
+ ├── server/       # Express backend
+ └── README.md
+</pre>
 
+<hr>
 
-## 🚀 Quick Start
+<h2>🧩 Setup Instructions</h2>
 
-<div align="left">
+<h3>1️⃣ Clone the Repository</h3>
 
-### Prerequisites
-- Node.js (v18 or higher)
-- npm (v9 or higher)
-- Git
+<pre>
+git clone https://github.com/Mitta-Abhilash-Reddy/Text2Vision.git
+cd Text2Vision
+</pre>
 
-</div>
+<h3>2️⃣ Backend Setup</h3>
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/singh04ayush/imagify.git
-cd imagify
-```
-
-### 2. Backend Setup
-```bash
-# Navigate to server directory
+<pre>
 cd server
-
-# Install dependencies
 npm install
+</pre>
 
-# Create .env file in the server directory
-touch .env
+<p>Create a <code>.env</code> file:</p>
 
-# Add the following environment variables to .env:
+<pre>
 PORT=5000
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
-CLIPDROP_API=your_clipdrop_api_key
+MONGODB_URI=your_mongodb_uri
+JWT_SECRET=your_jwt_secret
+TEXT2VISION_API_KEY=your_api_key
+</pre>
 
-# Start the server
+<p>Start backend:</p>
+
+<pre>
 npm run server
-```
+</pre>
 
-#### Backend Environment Variables Explanation
-| Variable | Description | Example |
-|----------|-------------|---------|
-| `PORT` | Server port number | `5000` |
-| `MONGODB_URI` | MongoDB connection string | `mongodb+srv://username:password@cluster.mongodb.net/imagify` |
-| `JWT_SECRET` | Secret key for JWT authentication | `your-secret-key-here` |
-| `CLIPDROP_API` | API key for ClipDrop image generation | `your-clipdrop-api-key` |
+<h3>3️⃣ Frontend Setup</h3>
 
-### 3. Frontend Setup
-```bash
-# Open a new terminal
-# Navigate to client directory
+<pre>
 cd client
-
-# Install dependencies
 npm install
+</pre>
 
-# If vite not installed
-npm install vite@latest
+<p>Create <code>.env</code> file:</p>
 
-# Create .env file in the client directory
-touch .env
-
-# Add the following environment variable to .env:
+<pre>
 VITE_BACKEND_URL=http://localhost:5000
+</pre>
 
-# Start the development server
+<p>Start frontend:</p>
+
+<pre>
 npm run dev
-```
+</pre>
 
-#### Frontend Environment Variables Explanation
-| Variable | Description | Example |
-|----------|-------------|---------|
-| `VITE_BACKEND_URL` | Backend API URL | `http://localhost:5000` |
+<hr>
 
-### 4. Access the Application
-- Frontend: `http://localhost:5173`
-- Backend API: `http://localhost:5000`
+<h2>🎯 How It Works</h2>
 
-> **Important Notes**: 
-> - Never commit your `.env` files to version control
-> - Make sure to replace the example values with your actual configuration
-> - The CLIPDROP_API key can be obtained from [ClipDrop API](https://clipdrop.co/apis)
-> - Keep your JWT_SECRET secure and use a strong random string
+<ol align="left">
+  <li>Enter a text description</li>
+  <li>AI transforms the text into an image</li>
+  <li>Download or refine the output</li>
+  <li>Use the image for creative or project purposes</li>
+</ol>
 
-<div align="center">
+<hr>
 
-### Development Scripts
+<h2>🤝 Contributing</h2>
 
-| Command | Description |
-|---------|-------------|
-| `npm run server` | Starts backend |
-| `npm run dev` | Starts frontend |
+<p>
+Contributions are welcome!<br>
+Feel free to open issues or submit pull requests.
+</p>
 
-### Environment Variables
+<hr>
 
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `PORT` | Server port | 5000 |
-| `MONGODB_URI` | MongoDB connection string | - |
-| `JWT_SECRET` | JWT secret key | - |
+<h2>📄 License</h2>
 
-</div>
+<p>This project is licensed under the <b>MIT License</b>.</p>
 
+<hr>
 
-## 🛠️ Tech Stack
+<h2>⭐ Support</h2>
 
-<div align="center">
-
-### Frontend
-![React](https://img.shields.io/badge/React-19.0.0-61DAFB?style=flat-square&logo=react&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-6.2.0-646CFF?style=flat-square&logo=vite&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.0.15-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
-
-
-### Backend
-![Node.js](https://img.shields.io/badge/Node.js-20.0.0-339933?style=flat-square&logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express-4.18.0-000000?style=flat-square&logo=express&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-6.0.0-47A248?style=flat-square&logo=mongodb&logoColor=white)
+<p>If you like this project, consider giving it a ⭐ on GitHub!</p>
 
 </div>
-
-## 🤝 Contributing
-
-<div align="center">
-
-We welcome contributions! Here's how you can help:
-
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
-
-</div>
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 License
-
-<div align="center">
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-</div>
-
-## 🙏 Acknowledgment
-
-<div align="center">
-
-| Resource | Description |
-|----------|-------------|
-| [Heroicons](https://heroicons.com/) | Beautiful icons |
-| [TailwindCSS](https://tailwindcss.com/) | Utility-first CSS framework |
-| [React Community](https://reactjs.org/community) | Amazing React ecosystem |
-
-</div>
-
----
-
-
